@@ -1,0 +1,31 @@
+#section-one {
+    display: flex;
+    padding:20px;
+    & .header {
+        width: 50%;
+        margin:20px;
+        & .goto-link {
+            background: var(--theme-primary);
+            padding: 5px 15px;
+            font-weight: bold;
+            color:white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            transition:300ms;
+            border: 1px solid var(--theme-primary);
+
+            &:hover {
+                background-color: white;
+                color: var(--theme-primary)
+            }
+        }
+        & h1 {
+            font-size: 3rem;
+        }
+        & p {
+            font-size: 2rem;
+        }
+    }
+}

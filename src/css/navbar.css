@@ -1,0 +1,44 @@
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+
+    #navbar {
+        height: 100px;
+        background: var(--theme-primary);
+        background: var(--theme-primary-grad);
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0px 20px;
+    
+        & .brand {
+            display: flex;
+            gap:15px;
+            color: white;
+            & svg {
+                height:75px;
+                width:75px;
+            }
+        }
+
+        & .tabs {
+            display: flex;
+            gap: 20px;
+
+            & .tab {
+                border:1px solid white;
+                color:white !important;
+
+                &.active {
+                    background-color: white;
+                    color: black !important;
+                }
+            }
+        }
+
+    }
+}
+
