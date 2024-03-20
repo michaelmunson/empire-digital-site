@@ -1,6 +1,9 @@
 import React from 'react';
-import { FaArrowRightLong, FaCode } from "react-icons/fa6";
+import { FaArrowRightLong, FaCode, FaAppStore, FaComputer } from "react-icons/fa6";
+import { IoMdPhonePortrait } from "react-icons/io";
+import { WiStars } from "react-icons/wi";
 import { FaGithub } from "react-icons/fa";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
 
 import "../css/home-page.css";
 
@@ -33,11 +36,40 @@ export default function HomePage() {
             <hr/>
             <div className='card-group'>
                 <div className='card'>
-                    <h1><FaCode/> Web Solutions</h1>
+                    <h1><FaCode style={{color:"var(--theme-primary)"}}/>Websites</h1>
+                    <div className='icon-list'>
+                        <div className='icon-list-item'>
+                            <FaComputer/> Responsive & User-Friendly
+                        </div>
+                        <div className='icon-list-item'>
+                            <MdOutlineDashboardCustomize /> Entirely Custom Designs
+                        </div>
+                        <div className='icon-list-item'>
+                            <IoMdPhonePortrait /> Mobile optimization
+                        </div>
+                    </div>
+                </div>
+                <div className='card'>
+                    <h1><FaAppStore style={{color:"var(--theme-primary)"}}/> Apps </h1>
+                    <p></p>
+                </div>
+            </div>
+            <div className='card-group'>
+                <div className='card'>
+                    <h1><FaAppStore style={{color:"var(--theme-primary)"}}/> Apps </h1>
                     <p></p>
                 </div>
                 <div className='card'>
-
+                    <h1><FaCode style={{color:"var(--theme-primary)"}}/> SEO </h1>
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div className='card'>
+                    <h1><FaCode style={{color:"var(--theme-primary)"}}/> SEO </h1>
+                    <ul>
+                        <li>Reponsie</li>
+                    </ul>
                 </div>
             </div>
         </div>
